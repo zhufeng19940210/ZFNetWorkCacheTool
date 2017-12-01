@@ -51,20 +51,20 @@ static NSString *const homeCellIdentity = @"homeCellIdentity";
         return;
     }];
     //GET带缓存的方法
-//    [[ZFNetWorkCacheTool ShareWorkTool]GETCacheWithUrl:@"https://www.daodianwang.com/api/business/showGoodBusiness" paramter:nil success:^(id responseObject) {
-//        [MBProgressHUD hideHUDForView:self.view animated:YES];
-//        NSLog(@"fengfengresponseObject:%@",responseObject);
-//        NSArray *array = responseObject[@"result"];
-//        for (NSDictionary *dict in array) {
-//            ProductModel *model = [ProductModel yy_modelWithJSON:dict];
-//                [self.dataArray addObject:model];
-//            }
-//            //刷新数据
-//            [self.homeTableView reloadData];
-//    } failure:^(NSString *error) {
-//        NSLog(@"请求失败");
-//        return;
-//    }];
+    [[ZFNetWorkCacheTool ShareWorkTool]GETCacheWithUrl:@"https://www.daodianwang.com/api/business/showGoodBusiness" paramter:nil success:^(id responseObject) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        NSLog(@"fengfengresponseObject:%@",responseObject);
+        NSArray *array = responseObject[@"result"];
+        for (NSDictionary *dict in array) {
+            ProductModel *model = [ProductModel yy_modelWithJSON:dict];
+                [self.dataArray addObject:model];
+            }
+            //刷新数据
+            [self.homeTableView reloadData];
+    } failure:^(NSString *error) {
+        NSLog(@"请求失败");
+        return;
+    }];
 }
 -(void)setupTabelView{
     self.homeTableView.delegate = self;
