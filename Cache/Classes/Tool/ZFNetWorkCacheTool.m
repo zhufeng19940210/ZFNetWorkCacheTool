@@ -191,4 +191,58 @@ typedef NS_ENUM(NSInteger, RequestType) {
         failure(error);
     }];
 }
+
+/*
+ GET:带缓存的请求
+ url:请求的url
+ paramter:请求的参数
+ success:请求成功的回调
+ failure:请求失败的回调
+ */
+-(void)GETCacheWithUrl:(NSString *)url
+              paramter:(id)paramter
+               success:(SuccessBlock)success
+               failure:(FailureBlock)failure{
+    [self requestWithUrl:url withParamter:paramter requestType:RequestTypeGet isCache:YES cacheKey:url imageKey:nil withData:nil upLoadProgress:nil success:^(id responseObject) {
+        success(responseObject);
+    } failure:^(NSString *error) {
+        failure(error);
+    }];
+}
+
+/*
+ POST:不带缓存请求
+ url:请求的url
+ parameter:请求的参数
+ success:请求成功的回调
+ faliure:请求失败的回调
+ */
+-(void)POSTWithUrl:(NSString *)url
+         parameter:(id)paramter
+           success:(SuccessBlock)success
+           failure:(FailureBlock)failure{
+    
+    [self requestWithUrl:url withParamter:paramter requestType:RequestTypePost isCache:NO cacheKey:nil imageKey:nil withData:nil upLoadProgress:nil success:^(id responseObject) {
+        success(responseObject);
+    } failure:^(NSString *error) {
+        failure(error);
+    }];
+}
+/*
+ POST:带缓存的请求
+ url:请求的url
+ parameter:请求的参数
+ success:请求成功的回调
+ failure:请求失败的回调
+ */
+-(void)POSTCacehWithUrl:(NSString *)url
+              parameter:(id)parameter
+                success:(SuccessBlock )success
+                failure:(FailureBlock)failure{
+    [self requestWithUrl:url withParamter:parameter requestType:RequestTypePost isCache:YES cacheKey:url imageKey:nil withData:nil upLoadProgress:nil success:^(id responseObject) {
+        success(responseObject);
+    } failure:^(NSString *error) {
+        failure(error);
+    }];
+}
 @end

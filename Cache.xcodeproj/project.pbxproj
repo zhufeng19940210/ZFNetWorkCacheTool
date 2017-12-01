@@ -19,6 +19,7 @@
 		BF9ABB9E1FD0C14B00775F7B /* ZFNetWorkCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABB9D1FD0C14B00775F7B /* ZFNetWorkCacheTool.m */; };
 		BF9ABBA21FD0DA1900775F7B /* ZFHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABBA01FD0DA1900775F7B /* ZFHomeTableViewCell.m */; };
 		BF9ABBA31FD0DA1900775F7B /* ZFHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9ABBA11FD0DA1900775F7B /* ZFHomeTableViewCell.xib */; };
+		BF9ABBA61FD0DFD400775F7B /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABBA51FD0DFD400775F7B /* ProductModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		BF9ABB9F1FD0DA1900775F7B /* ZFHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFHomeTableViewCell.h; sourceTree = "<group>"; };
 		BF9ABBA01FD0DA1900775F7B /* ZFHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFHomeTableViewCell.m; sourceTree = "<group>"; };
 		BF9ABBA11FD0DA1900775F7B /* ZFHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFHomeTableViewCell.xib; sourceTree = "<group>"; };
+		BF9ABBA41FD0DFD400775F7B /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductModel.h; sourceTree = "<group>"; };
+		BF9ABBA51FD0DFD400775F7B /* ProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductModel.m; sourceTree = "<group>"; };
 		DFBDBC21FCB0AA7957F62B1E /* Pods-Cache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cache.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cache/Pods-Cache.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +135,8 @@
 		BF9ABB941FD0C10600775F7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF9ABBA41FD0DFD400775F7B /* ProductModel.h */,
+				BF9ABBA51FD0DFD400775F7B /* ProductModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				BF9ABB9A1FD0C13100775F7B /* ZFHomeViewController.m in Sources */,
 				BF9ABB781FD0BED000775F7B /* main.m in Sources */,
 				BF9ABB6A1FD0BED000775F7B /* AppDelegate.m in Sources */,
+				BF9ABBA61FD0DFD400775F7B /* ProductModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

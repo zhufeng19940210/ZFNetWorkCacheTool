@@ -50,6 +50,10 @@ typedef void (^LoadProgress)(float progress);
            failure:(FailureBlock)failure;
 /*
  POST:带缓存的请求
+ url:请求的url
+ parameter:请求的参数
+ success:请求成功的回调
+ failure:请求失败的回调
  */
 -(void)POSTCacehWithUrl:(NSString *)url
               parameter:(id)parameter
