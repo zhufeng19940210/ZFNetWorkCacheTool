@@ -14,6 +14,11 @@
 		BF9ABB721FD0BED000775F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9ABB711FD0BED000775F7B /* Assets.xcassets */; };
 		BF9ABB751FD0BED000775F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9ABB731FD0BED000775F7B /* LaunchScreen.storyboard */; };
 		BF9ABB781FD0BED000775F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABB771FD0BED000775F7B /* main.m */; };
+		BF9ABB9A1FD0C13100775F7B /* ZFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABB981FD0C13100775F7B /* ZFHomeViewController.m */; };
+		BF9ABB9B1FD0C13100775F7B /* ZFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9ABB991FD0C13100775F7B /* ZFHomeViewController.xib */; };
+		BF9ABB9E1FD0C14B00775F7B /* ZFNetWorkCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABB9D1FD0C14B00775F7B /* ZFNetWorkCacheTool.m */; };
+		BF9ABBA21FD0DA1900775F7B /* ZFHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9ABBA01FD0DA1900775F7B /* ZFHomeTableViewCell.m */; };
+		BF9ABBA31FD0DA1900775F7B /* ZFHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9ABBA11FD0DA1900775F7B /* ZFHomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,14 @@
 		BF9ABB741FD0BED000775F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9ABB761FD0BED000775F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9ABB771FD0BED000775F7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF9ABB971FD0C13100775F7B /* ZFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFHomeViewController.h; sourceTree = "<group>"; };
+		BF9ABB981FD0C13100775F7B /* ZFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFHomeViewController.m; sourceTree = "<group>"; };
+		BF9ABB991FD0C13100775F7B /* ZFHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFHomeViewController.xib; sourceTree = "<group>"; };
+		BF9ABB9C1FD0C14B00775F7B /* ZFNetWorkCacheTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNetWorkCacheTool.h; sourceTree = "<group>"; };
+		BF9ABB9D1FD0C14B00775F7B /* ZFNetWorkCacheTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNetWorkCacheTool.m; sourceTree = "<group>"; };
+		BF9ABB9F1FD0DA1900775F7B /* ZFHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFHomeTableViewCell.h; sourceTree = "<group>"; };
+		BF9ABBA01FD0DA1900775F7B /* ZFHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFHomeTableViewCell.m; sourceTree = "<group>"; };
+		BF9ABBA11FD0DA1900775F7B /* ZFHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFHomeTableViewCell.xib; sourceTree = "<group>"; };
 		DFBDBC21FCB0AA7957F62B1E /* Pods-Cache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cache.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cache/Pods-Cache.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +86,7 @@
 		BF9ABB671FD0BED000775F7B /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				BF9ABB911FD0C10600775F7B /* Classes */,
 				BF9ABB681FD0BED000775F7B /* AppDelegate.h */,
 				BF9ABB691FD0BED000775F7B /* AppDelegate.m */,
 				BF9ABB6B1FD0BED000775F7B /* ViewController.h */,
@@ -84,6 +98,61 @@
 				BF9ABB771FD0BED000775F7B /* main.m */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		BF9ABB911FD0C10600775F7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF9ABB921FD0C10600775F7B /* Home */,
+				BF9ABB961FD0C10600775F7B /* Tool */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF9ABB921FD0C10600775F7B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF9ABB931FD0C10600775F7B /* Controller */,
+				BF9ABB941FD0C10600775F7B /* Model */,
+				BF9ABB951FD0C10600775F7B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BF9ABB931FD0C10600775F7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF9ABB971FD0C13100775F7B /* ZFHomeViewController.h */,
+				BF9ABB981FD0C13100775F7B /* ZFHomeViewController.m */,
+				BF9ABB991FD0C13100775F7B /* ZFHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF9ABB941FD0C10600775F7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF9ABB951FD0C10600775F7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9ABB9F1FD0DA1900775F7B /* ZFHomeTableViewCell.h */,
+				BF9ABBA01FD0DA1900775F7B /* ZFHomeTableViewCell.m */,
+				BF9ABBA11FD0DA1900775F7B /* ZFHomeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF9ABB961FD0C10600775F7B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BF9ABB9C1FD0C14B00775F7B /* ZFNetWorkCacheTool.h */,
+				BF9ABB9D1FD0C14B00775F7B /* ZFNetWorkCacheTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		F66684725BA4FB8596A1430A /* Pods */ = {
@@ -157,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9ABB751FD0BED000775F7B /* LaunchScreen.storyboard in Resources */,
+				BF9ABB9B1FD0C13100775F7B /* ZFHomeViewController.xib in Resources */,
+				BF9ABBA31FD0DA1900775F7B /* ZFHomeTableViewCell.xib in Resources */,
 				BF9ABB721FD0BED000775F7B /* Assets.xcassets in Resources */,
 				BF9ABB701FD0BED000775F7B /* Main.storyboard in Resources */,
 			);
@@ -220,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9ABBA21FD0DA1900775F7B /* ZFHomeTableViewCell.m in Sources */,
+				BF9ABB9E1FD0C14B00775F7B /* ZFNetWorkCacheTool.m in Sources */,
 				BF9ABB6D1FD0BED000775F7B /* ViewController.m in Sources */,
+				BF9ABB9A1FD0C13100775F7B /* ZFHomeViewController.m in Sources */,
 				BF9ABB781FD0BED000775F7B /* main.m in Sources */,
 				BF9ABB6A1FD0BED000775F7B /* AppDelegate.m in Sources */,
 			);
@@ -360,10 +434,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
 				INFOPLIST_FILE = Cache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.Cache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,10 +450,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
 				INFOPLIST_FILE = Cache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.Cache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

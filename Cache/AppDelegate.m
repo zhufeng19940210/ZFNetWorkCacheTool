@@ -7,16 +7,17 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZFHomeViewController.h"
 @interface AppDelegate ()
-
 @end
-
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVc];
+    self.window.rootViewController  = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

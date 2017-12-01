@@ -8,4 +8,7 @@ target 'Cache' do
   # Pods for Cache
   pod 'AFNetworking'
   pod 'YYCache'
+  pod 'YYModel'
+  pod 'YYWebImage'
+  pod 'MBProgressHUD'
 end
